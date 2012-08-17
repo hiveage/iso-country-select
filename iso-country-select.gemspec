@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     "Gemfile",
+    "Gemfile.lock",
     "README.md",
     "Rakefile",
     "VERSION",
@@ -26,6 +27,7 @@ Gem::Specification.new do |s|
     "config/locales/fr.yml",
     "config/locales/it.yml",
     "config/locales/ru.yml",
+    "iso-country-select.gemspec",
     "lib/iso-country-select.rb"
   ]
   s.homepage = "http://github.com/mcasimir/kaminari-bootstrap"
