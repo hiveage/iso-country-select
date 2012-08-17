@@ -28,7 +28,8 @@ Gem::Specification.new do |s|
     "config/locales/it.yml",
     "config/locales/ru.yml",
     "iso-country-select.gemspec",
-    "lib/iso-country-select.rb"
+    "lib/iso-country-select.rb",
+    "lib/iso3166.rb"
   ]
   s.homepage = "http://github.com/mcasimir/kaminari-bootstrap"
   s.licenses = ["MIT"]
