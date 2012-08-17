@@ -25,7 +25,7 @@ require 'rails'
 require 'iso3166'
 
 module ActionView
-  module Helpers
+  module Helpers    
     module FormOptionsHelper
       def country_select(object, method, priority_countries = nil, options = {}, html_options = {})
         InstanceTag.new(object, method, self, options.delete(:object)).to_country_select_tag(priority_countries, options, html_options)
@@ -68,3 +68,15 @@ module ActionView
     end
   end
 end
+
+module IsoCountrySelect
+  extend ActiveSupport::Concern
+  
+  def country_name(code)
+    Iso3166.localize(code)
+  end
+  
+end
+
+ActionView::Base.send :include, IsoCountrySelect
+
