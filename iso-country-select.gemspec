@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "iso-country-select"
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["mcasimir"]
-  s.date = "2012-08-17"
+  s.date = "2012-08-18"
   s.description = "Localized country select helper for rails that stores ISO 3166-1 alpha-3 country codes instead of names"
   s.email = "maurizio.cas@gmail.com"
   s.extra_rdoc_files = [
