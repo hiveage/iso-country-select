@@ -40,10 +40,11 @@ module ActionView
         end
         
         countries = Iso3166.codes.map {|code|
-          [Iso3166.localize(code), code]
-        }
+          local_country = Iso3166.localize(code)
+          [local_country, code] unless priority_countries.include?(local_country)
+        }.compact
                
-        return country_options + options_for_select(countries, selected)
+        return country_options.html_safe + options_for_select(countries, selected).html_safe
       end
     end
     
